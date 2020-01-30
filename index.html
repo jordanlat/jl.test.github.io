@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Formulaire Dynamique</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body onload="init()">
+    <header>
+        <h1 class="titre">Teamder</h1>
+        <h2 class="sousTitre">Presser un boutton peu changer deux vie.</h2>
+    </header>
+    <main>
+        <div class="mainFrame">
+            <div id="buttonRandom">
+                <form action="#" method="POST">
+                    <input type="button" id="bpRandom" name="nbrMate" value="Let's Shuffle">
+                    <br><label for="nbrMate">Number of people in one team: </label><br>
+                    <input type="number" type="text" name="nbrMate" id="nbrMate" min="1" value="2">
+                </form>
+            </div>
+            <div class="update">
+                <div id="counter"></div>
+                <div class="olList">
+                    <ol id="list">
+
+                    </ol>
+                    <!-- Ici main.js va ajouter la liste préfaite de prénom -->
+                </div>
+                <form action="#" method="post" id="form">
+                    <input type="text" placeholder="Prénom" id="inputName">
+                    <input type="submit" id="bpAdd" value="Add">
+                </form>
+            </div>
+        </div>
+        <div id='team'>
+            <!-- Ici main.js va ajouter la nouvelle liste de prénom -->
+        </div>
+
+    </main>
+    <footer>
+        <h5>Copyright Jordan LAT 2019</h5>
+    </footer>    
+</body>
+<script src="assets/main.js"></script>
+</html>
